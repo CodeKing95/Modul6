@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const randomUser = {
+        firstName: "Denise",
+        lastName: "Hughes",
+        email: "denise.hughes@example.com",
+        dateOfBirth: "3-1-1960",
+        address: {
+          street: "Saddle Drivce",
+          number: 2406,
+          zipcode: 15106,
+          city: "Pittsburg Pennsylvania, USA",
+        },
+        phone: {
+          mobile: "313755-5081",
+          home: "1234567890",
+        },
+        password: "option",
+        pcitureUrl: "http://example.com",
+      };
+
+      const userString = `{
+        gender: "male",
+        name: {
+          title: "Mr",
+          first: "Carko",
+          last: "Kaminska",
+        },
+        location: {
+          street: {
+            number: 8542,
+            name: "Nizova",
+          },
+          city: "Ukrayinsk",
+          state: "Chernivecka",
+          country: "Ukraine",
+          postcode: 96025,
+          coordinates: {
+            latitude: "74.3154",
+            longitude: "-38.9307",
+          },
+          timezone: {
+            offset: "+9:00",
+            description: "Tokyo, Seoul, Osaka, Sapporo, Yakutsk",
+          },
+        },
+        email: "carko.kaminska@example.com",
+        login: {
+          uuid: "e5dd9eff-1ca8-4285-aa49-60d1b3098bbf",
+          username: "crazymeercat445",
+          password: "passw0rd",
+          salt: "hVPHjFtN",
+          md5: "d983b379a2b36f7f8795e9fb30563772",
+          sha1: "adfed20230e2639ce9a4f9cff9cbc31c21eef23e",
+          sha256:
+            "8eccde5bf3a028f90def5475497b3a4cfe48f036ce06074ab18f8388f0129ad3",
+        },
+        dob: {
+          date: "1945-11-10T14:07:56.540Z",
+          age: 79,
+        },
+        registered: {
+          date: "2019-04-23T06:02:01.635Z",
+          age: 5,
+        },
+        phone: "(098) G05-5769",
+        cell: "(097) K41-8212",
+        id: {
+          name: "",
+          value: null,
+        },
+        picture: {
+          large: "https://randomuser.me/api/portraits/men/9.jpg",
+          medium: "https://randomuser.me/api/portraits/med/men/9.jpg",
+          thumbnail: "https://randomuser.me/api/portraits/thumb/men/9.jpg",
+        },
+        nat: "UA",
+      }`;
+
+      const deSerialUser = JSON.parse(userString);
+      deSerialUser.gender = "male";
+      console.log(deSerialUser.name.first);
+      console.log(deSerialUser);
+      console.log(userString);
+      console.log(deSerialUser);
+    </script>
+  </head>
+  <body></body>
+</html>
